@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express'
 import bodyParser from 'body-parser'
-import { addressesRouter, productsRouter } from "./routes";
+import { addressesRouter, productsRouter } from './routes'
 
 const port = process.env.PORT || 4000
 const parserMiddleware = bodyParser({})
@@ -17,3 +17,4 @@ app.get('/', (req: Request, res: Response) => {
 })
 
 app.listen(port)
+
